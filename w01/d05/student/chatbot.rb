@@ -1,13 +1,11 @@
-stdout.puts("Hi there, I'm Eliza! Let's have a chat.")
+$stdout.puts("Hi there, I'm Eliza! Let's have a chat.")
 
-good_bye_answer = $stdin.gets.chomp
+#if good_bye_answer = "Goodbye"
+  #$stdout.puts("Bye bye")
 
-if good_bye_answer = "Goodbye"
-  stdout.puts.chomp("Bye bye")
+#end
 
-end
-
-def user_answer(the_answer)
+def user_answer
   $stdout.print('>> ')
   $stdin.gets.chomp
 end
@@ -18,12 +16,25 @@ $Elizas_answers_questions = ["Well, I don't know", "I don't know how to answer t
 
 $Elizas_answers_exclamation = ["OMG", "What can you do about it?", "Do something about it", "Can I help you?"]
 
-def answer_to_period
-  $Elizas_answers_period.sample
+#def answer_to_period
+ # $Elizas_answers_period.sample
 
-end
+#end
 
 leave = true
-while condition
+
+while leave
+  hello_eliza = user_answer
+  if hello_eliza == "Goodbye"
+   leave = false
+  elsif hello_eliza.end_with? "?"
+    $stdout.puts($Elizas_answers_questions.sample)
+  elsif hello_eliza.end_with? "."
+    $stdout.puts($Elizas_answers_period.sample)
+  elsif hello_eliza.end_with? "!"
+    $stdout.puts($Elizas_answers_exclamation.sample)
+
+  end
 
 end
+
