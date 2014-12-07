@@ -20,8 +20,22 @@ while ShylockBot_purse > 0
    if action_to_perform == "purse"
     $stdout.puts ("::ShylockBot pulls out his purse::")
     $stdout.puts (ShylockBot_purse.to_s + " ducats")
+
+  elsif action_to_perform == "loan"
+    name = asking ("name of borrower")
+    amount = asking ("How much do you want to loan?")
+    $stdout.puts ("loaning #{name} #{amount} ducats" )
+    $stdout.puts ("::ShylockBot gives #{name} #{amount} ducats::")
+    break
+
+  elsif action_to_perform == "ledger"
+    $stdout.puts ("::ShylockBot pulls out his ledger::")
+    $stdout.puts ()
+
+
   else
     $stdout.puts ("::ShylockBot looks confused::")
+
     break
   end
 
