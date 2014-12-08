@@ -1,19 +1,25 @@
 
 # Strings and Arrays
-# 
+#
 # 1. Write the Ruby to split the string `contenders` into an array of 4 items.
 
 contenders = "Alabama, Florida State, Oregon, Ohio State"
+
+contenders.split(4)
 
 # 2. Write the Ruby to turn the array `contenders` into the string:
 #    "Alabama, Florida State, Oregon, Ohio State are in the playoffs."
 
 contenders = ["Alabama", "Florida State", "Oregon", "Ohio State"]
 
+new_contenders = contenders.string + "are in the playoffs"
+
 # Data Structures
 #
 # Write the Ruby to discover what type of data structure the variable
 # `contenders` is.
+
+contenders.class
 
 # Arrays
 #
@@ -24,14 +30,19 @@ contenders = ["Alabama", "Florida State", "Oregon", "Ohio State"]
 #      c. "Texas Christian University (TCU)"
 #      d. "Baylor"
 
+contenders["Alabama"]
+contenders["Florida State"]
+contenders["Texas Christian University"]
+contenders["Baylor"]
+
 # 2. Access the 3rd item in the array `contenders`.
 
-# 3. Set the 4th item as "Texas Christian University (TCU)," 
+# 3. Set the 4th item as "Texas Christian University (TCU),"
 #    and the 3rd item as "Oregon."
 
 # 4. Print the number of items in the array.
 
-# 5. Remove the last item in the array, then add another item to the end of the 
+# 5. Remove the last item in the array, then add another item to the end of the
 #   array that is the string "Ohio State."
 
 # 6. Add the number 1 to the beginning of the array, then remove the first item
@@ -51,7 +62,7 @@ contenders = ["Alabama", "Florida State", "Oregon", "Ohio State"]
 
 # 3. Set the value with the key "Ohio State" to "Big 10."
 
-# 4. List the unique teams (keys) in the hash. List the unique values 
+# 4. List the unique teams (keys) in the hash. List the unique values
 #    (conferences) in the hash.
 
 # Loops
@@ -63,7 +74,26 @@ contenders = ["Alabama", "Florida State", "Oregon", "Ohio State"]
 
 # Methods
 #
-# Define a new method that takes an array of strings as input. It prints to the 
+# Define a new method that takes an array of strings as input. It prints to the
 # standard output every item in the array followed by the words: " might win!",
 # unless the string's contents is "Ohio State", in which case it adds the words
 # " will win!". Finally, it returns the number of items in the array.
+
+def print_hip_hip_hooray_three_times
+  i = 0
+  while i < 3
+    $stdout.puts("Hip hip, hooray")
+    i += 1
+  end
+
+end
+
+def print_hip_hip_hooray(num_of_times)
+  i = 0
+  while i < number_of_times
+    $stdout.puts("Hip hip, hooray")
+    i += 1
+  end
+true
+end
+

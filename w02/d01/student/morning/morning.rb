@@ -3,29 +3,33 @@
 ################################################################################
 # Part 1
 ################################################################################
-
+require 'pry'
 # Step 1
 # Require the file taylors.rb
+require_relative 'taylors'
 
 # Require the file boneyard/exes.rb
+require_relative "boneyard/exes"
 
 # Step 2
 # Methods
 
 def sing(lyric)
-  # missing code
+   "♬" + lyric + "♬"
 end
 
 def mmm_mmm(lyric)
-  # missing code
+  "♬lyric, mmm-mmm♬"
 end
 
 
 def back_up(lyric, number_of_words)
-  # missing code
+  backup_sings = lyric.split(" ").last(number_of_words).join(" ")
+  lyric
+
 end
 
-# Step 3
+def repeat(lyric)
 # Create the additional methods
 
 # repeat
