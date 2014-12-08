@@ -23,15 +23,19 @@ while ShylockBot_purse > 0
 
   elsif action_to_perform == "loan"
     name = asking ("name of borrower")
+    #debtors[name] = []
     money_loaned = asking ("How much do you want to loan?")
     $stdout.puts ("loaning #{name} #{money_loaned} ducats" )
     $stdout.puts ("::ShylockBot gives #{name} #{money_loaned} ducats::")
-    break
+    ShylockBot_purse = ShylockBot_purse - money_loaned.to_i
+
+   #people_owe = {}
 
   elsif action_to_perform == "ledger"
     $stdout.puts ("::ShylockBot pulls out his ledger::")
-      money_difference = ShylockBot_purse - money_loaned.to_i
-        if loan == true
+        if (ShylockBot_purse < 100000) && (ShylockBot_purse > 0)
+
+      #money_difference = ShylockBot_purse - money_loaned.to_i
           $stdout.puts ("#{name} owes me #{money_loaned} ducats")
         else
           $stdout.puts ("Nobody owes you anything")

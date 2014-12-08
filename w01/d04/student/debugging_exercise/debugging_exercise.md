@@ -1,4 +1,4 @@
-## Debugging With binding.pry
+
 
 My `guess_the_number.rb` file is broken, and I don't know why. Sometimes I get an error when I play the game. Other times I dont. You've been tasked with fixing my program using the time-stopping ability of `binding.pry`.
 
