@@ -10,8 +10,11 @@ class Apartment
     @tenants = []
   end
 
-a1 = Apartment.new("M", 4, 2)
+  def apartment_price
+    (@num_beds * 1000) + (@num_baths * 500)
+  end
 
 end
 
+a1 = Apartment.new("M", 4, 2)
 
