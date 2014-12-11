@@ -1,5 +1,6 @@
 class Turtle
 
+include Ninjable
   attr_accessor :name
 
   def initialize

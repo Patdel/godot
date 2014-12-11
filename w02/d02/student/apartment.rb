@@ -1,12 +1,13 @@
 
 class Apartment
 
-  attr_accessor :unit, :num_beds, :num_baths
+  attr_accessor :unit, :num_beds, :num_baths,
 
-  def initialize(unit, num_beds, num_baths)
+  def initialize(unit, num_beds, num_baths, num_rooms)
     @unit = unit
     @num_beds = num_beds
     @num_baths = num_baths
+    @num_rooms = num_rooms
     @tenants = []
   end
 
@@ -15,6 +16,11 @@ class Apartment
   end
 
 end
+
+#def one_bedroom
+
+
+#end
 
 a1 = Apartment.new("M", 4, 2)
 
