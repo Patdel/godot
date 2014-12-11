@@ -1,10 +1,15 @@
-attr_accessor :title
 
 
-class Movie(title)
+class Movie
 
-@title = title
+attr_accessor :title, :director
+
+  def initialize(title)
+    @title = title
+  end
+
 
 end
 
-flick = Movie.new
+movie = Movie.new("Jaws")
+movie.director
