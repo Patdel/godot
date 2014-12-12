@@ -26,13 +26,14 @@ class Vehicle
 
     def go_to(destination)
 
+
       if @passengers.length < 1
-        false
+        $stdout.puts("This #{description} car does not have passengers!")
       else
-        @location = destination
+       @location = destination
+        $stdout.puts("Hello, you are going to #{destination}")
       end
 
-      $stdout.puts("Hello, you are going to #{destination}")
 
     end
 
