@@ -18,5 +18,11 @@ class Vehicle
 
   end
 
+    def in_danger?
+      @passengers.length >  @capacity
+      true
+
+    end
+
 
 end #Vehicle
