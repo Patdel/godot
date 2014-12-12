@@ -24,5 +24,17 @@ class Vehicle
 
     end
 
+    def go_to(destination)
+
+      if @passengers.length < 1
+        false
+      else
+        @location = destination
+      end
+
+      $stdout.puts("Hello, you are going to #{destination}")
+
+    end
+
 
 end #Vehicle
