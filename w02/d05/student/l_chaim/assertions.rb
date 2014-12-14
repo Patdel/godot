@@ -27,24 +27,24 @@ assert_that("a person can't remember anything before the age of 3",
 
 # ** continue once the above assertions run **
 
-# p1.age! #=> 2
-# p1.age! #=> 3
-# assert_that("at the age of 3 a person can hold memories", p1.memories.is_a?(Array), true)
+p1.age! #=> 2
+p1.age! #=> 3
+assert_that("at the age of 3 a person can hold memories", p1.memories.is_a?(Array), true)
 
-# p1.remember("going to the bathroom under the piano")
-# first_memory = {age: 3, memory: "going to the bathroom under the piano"}
+p1.remember("going to the bathroom under the piano")
+first_memory = {age: 3, memory: "going to the bathroom under the piano"}
 
-# assert_that("...and remember things",     p1.memories.first, first_memory)
-# assert_that("the brain has the memories", p1.brain[:memories].first, first_memory)
-# p1.get_interested_in("football")
-# assert_that("at the age of 3 a person has no interests", p1.interests.empty?, true)
+assert_that("...and remember things",     p1.memories.first, first_memory)
+assert_that("the brain has the memories", p1.brain[:memories].first, first_memory)
+p1.get_interested_in("football")
+assert_that("at the age of 3 a person has no interests", p1.interests.empty?, true)
 
 # ** continue once the above assertions run **
 
-# p1.age! #=> 4
-# p1.get_interested_in("crayons")
-# assert_that("a person can add interests", p1.interested_in?("crayons"), true)
-# assert_that("adding an interest adds a memory", p1.memories.include?({age: 4, memory: "got interested in crayons"})
+p1.age! #=> 4
+p1.get_interested_in("crayons")
+assert_that("a person can add interests", p1.interested_in?("crayons"), true)
+assert_that("adding an interest adds a memory", p1.memories.include?({age: 4, memory: "got interested in crayons"}), false)
 
 # ** continue once the above assertions run **
 
