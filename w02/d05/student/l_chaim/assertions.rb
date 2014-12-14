@@ -16,14 +16,14 @@ assert_that("we can set a person's name", p1.name, "Jim Kevin")
 
 # ** continue once the above assertions run **
 
-# p1.age! #=> 1
-# assert_that("a person can age",          p1.age, 1)
-# assert_that("a person has a brain hash", p1.brain.is_a?(Hash),           true)
-# assert_that("a brain has memories",      p1.brain.has_key?(:memories),   true)
-# asse.rt_that("a brain has loved_ones",    p1.brain.has_key?(:loved_ones), true)
-# assert_that("a brain has interests",     p1.brain.has_key?(:interests),  true)
-# assert_that("a person can't remember anything before the age of 3",
-#                                          p1.memories, nil)
+p1.age! #=> 1
+assert_that("a person can age",          p1.age, 1)
+assert_that("a person has a brain hash", p1.brain.is_a?(Hash),           true)
+assert_that("a brain has memories",      p1.brain.has_key?(:memories),   true)
+assert_that("a brain has loved_ones",    p1.brain.has_key?(:loved_ones), true)
+assert_that("a brain has interests",     p1.brain.has_key?(:interests),  true)
+assert_that("a person can't remember anything before the age of 3",
+                                         p1.memories, nil)
 
 # ** continue once the above assertions run **
 

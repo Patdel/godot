@@ -1,3 +1,4 @@
+
 require 'colorize' # need the gem!
 
 module SimpleAssert
