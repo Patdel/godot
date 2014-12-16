@@ -2,17 +2,25 @@
 
 ```ruby
 module AppName                    # 1.  What is `AppName` and why do we use it?
+                                        It's the name of a module
   class Server < Sinatra::Base    # 2.  What is `Server`?
+                                        Server is the name of a class that inherits from Sinatra
                                   # 3.  What is `Sinatra`?
+                                         It's a web framework that allows us to write web applications
                                   # 4.  What is `Base`?
-
+                                        It creates a subset of features from a class
     enable :logging               # 5.  What is `enable`?
+                                         It sets the setting to true
     get('/') do                   # 6.  What is `get`?
+                                        It is a method that responds to http get requests
                                   # 7.  What are the three inputs of `get`?
+                                         status, headers, and body
 
       $stderr.puts "We have an error."       # 8.  In Sinatra where does $stderr
                                              #     print to?
+                                                   It prints to the default Sinatra error string
       logger.error "We have an error."       # 9.  What is `logger`?
+
                                              # 10. What is `error`?
                                              # 11. Where does `logger` print to?
                                              # 12. How is the logger print out
@@ -35,7 +43,9 @@ module AppName                    # 1.  What is `AppName` and why do we use it?
       #   - curl http://localhost:3000
 
       if request.params.length != 0         # 20. What is `params`?
+                                                  It's a parameter
                                             # 21. What does `params` return?
+                                            It returns a response based on the number of characters of an object
                                             # 22. What does it represent?
         body "The request's params were: '#{request.params}'.\n"
                                             # 23. What is `body`?
@@ -78,6 +88,7 @@ end
 
 ```ruby
 require 'sinatra/base'      # 1.  What is the purpose of this line?
+                                  Its purpose is to bring only part of the framework to work with
                             # 2.  What does 'sinatra/base' refer to?
                             # 3.  Where is 'sinatra/base'?
 require_relative './server' # 4.  Why are we using `require_relative`?

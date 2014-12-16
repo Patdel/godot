@@ -1,3 +1,6 @@
+# require 'pry'
+
+# binding.pry
 module AppName
   class Server < Sinatra::Base
     enable :logging
