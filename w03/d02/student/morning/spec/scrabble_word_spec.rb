@@ -1,7 +1,13 @@
 # What needs to be required and included in order to use the SimpleAssert library?
 # What needs to be required to use the ScrabbleWord code?
-
+require_relative './simple_assert'
 # Morning!
+
+require_relative '../scrabble_word'
+
+include SimpleAssert
+
+
 
 word = ScrabbleWord.new('b')
 score = word.score
@@ -12,17 +18,16 @@ assert_that(
 
 # Uncomment the next assertion once the first passes!
 
-# word = ScrabbleWord.new('C')
-# assert_that(
-#   'The score should not be affected by capitalization.',
-#   word.score,
-#   3)
+word = ScrabbleWord.new('C')
+assert_that(
+  'The score should not be affected by capitalization.',
+  word.score,
+  3)
 
-# word = ScrabbleWord.new('winter')
-# assert_that(
-#   '`Scrabble#score` works with multiple letters',
-#   word.score,
-#   9)
+word = ScrabbleWord.new('winter')
+assert_that('`Scrabble#score` works with multiple letters',
+  word.score,
+  9)
 
 
 # word = ScrabbleWord.new('SnoWMaN')
