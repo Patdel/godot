@@ -4,7 +4,7 @@ module  Jedi
 
   class Server < Sinatra::Base
 
-#include Jedi
+include StarPower
 
 
     get("/") do
@@ -17,6 +17,7 @@ module  Jedi
     end
 
     get("/stars") do
+      @stars = STARS
        render(:erb, :stars, {:layout => :default_layout})
     end
 
