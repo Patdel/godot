@@ -37,3 +37,24 @@ img {
 /*==================================*/
 /* Write Your Styles below!!! */
 /*==================================*/
+
+.wishbone {
+  position: relative;
+  top: 50px;
+  left: 225px;
+}
+
+.heart {
+  position: relative;
+  top: 60px;
+  left: -165px;
+}
+
+.butterflies {
+  position: relative;
+  top: 140px;
+  left: -185px;
+
+}
+
+

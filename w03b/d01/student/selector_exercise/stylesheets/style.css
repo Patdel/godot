@@ -3,7 +3,11 @@
 /*==================================*/
 
 h1 {
+<<<<<<< HEAD
     text-transform: uppercase;
+=======
+  text-transform: uppercase;
+>>>>>>> 5fb72912504188024ed56dec2a8ce3cc009658ee
 }
 
 a {
@@ -14,12 +18,21 @@ p {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 div.green {
+=======
+
+div .green {
+>>>>>>> 5fb72912504188024ed56dec2a8ce3cc009658ee
   background-color: rgb(148, 179, 148);
   border: 5px dashed green;
 }
 
+<<<<<<< HEAD
 .ring div {
+=======
+.ring {
+>>>>>>> 5fb72912504188024ed56dec2a8ce3cc009658ee
   border-color: gray;
 }
 
@@ -27,6 +40,7 @@ div.green {
   font-style: italic;
 }
 
+<<<<<<< HEAD
 #bullseye {
   background-color: #D04A41;
 }
@@ -48,5 +62,28 @@ h1, h2 {
 }
 
 .container p:nth-child(1n) {
+=======
+div #bullseye {
+  background-color: #D04A41;
+}
+
+#bullseye:hover {
+  opacity: 0.5;
+}
+
+h1, h2 {
+  font-size: 3em;
+}
+
+.target.container{
+  background-color: #facade;
+}
+
+div.yellow p:nth-child(2){
+  opacity: 0;
+}
+
+div.container p:nth-of-type(1){
+>>>>>>> 5fb72912504188024ed56dec2a8ce3cc009658ee
   text-decoration: underline;
 }

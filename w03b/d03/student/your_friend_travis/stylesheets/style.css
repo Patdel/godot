@@ -10,5 +10,22 @@ html, body {
   color: #323232;
 }
 
+li {
+  display: inline-block;
+}
+
+p {
+  font-size: 30px;
+  line-height: 0.1em;
+  position: relative;
+  top: 200px;
+  left: 500px;
+}
+
+div {
+  position: relative;
+  top: 500px;
+  left: 50px;
+}
 /* background color in header & footer: #323232 */
 /* text color code for the header/footer: #DBDBDB       */

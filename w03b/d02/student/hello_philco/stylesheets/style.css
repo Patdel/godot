@@ -16,3 +16,25 @@ html {
 /* ======================================= */
 /*    Students: Write Your Styles Below!   */
 /* ======================================= */
+
+.anime {
+  position: relative;
+  top: 40;
+  left: 220;
+}
+
+h1 {
+  font-size: 110px;
+  position: relative;
+  top: -350;
+  left: 625;
+  color: blue;
+}
+
+p {
+  font-size: 120px;
+  position: relative;
+  top: -500;
+  left: 550;
+  color: red;
+}
