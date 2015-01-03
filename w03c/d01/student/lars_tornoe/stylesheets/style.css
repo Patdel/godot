@@ -3,12 +3,83 @@
   /* Recta-Bold    (for bold text)  */
   /* Recta-Regular (for paragraphs) */
 
+header {
+  width: 95%;
+  /*padding: 50px;*/
+}
+
 body {
   border: 8px solid rgb(255, 250, 185);
   min-height: 100%; /* ensures that body element will expand to the size of the window */
+  padding: 60px;
 }
 
 /* ensures that any divs set to display: inline-block will align along the top of their respective containers */
 div {
   vertical-align: top;
 }
+
+.main {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-wrapper.half {
+  display: inline-block;
+  width: 60%
+
+}
+
+.nav.half{
+  display: inline-block;
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30,30,30)
+}
+
+ul {
+  list-style: none;
+
+}
+
+li {
+  display: inline-block;
+  font-family: Aldine-Light;
+  padding: 10px;
+  font-size: 1.2em;
+  ;
+}
+
+.furniture {
+  position: absolute;
+  top: 90px;
+  left: 140px;
+}
+
+.two-thirds.product-wrapper {
+  display: inline-block;
+  width: 65%;
+}
+
+.one-third.product-wrapper.right {
+  display: inline-block;
+  width: 25%;
+  margin: 5px;
+}
+
+.one-third.product-wrapper {
+  display: inline-block;
+  width: 35%;
+  /*margin-right: 5px;*/
+}
+
+.two-thirds.product-wrapper.right {
+  display: inline-block;
+  width: 55%;
+  /*margin-left: 5px;*/
+}
+

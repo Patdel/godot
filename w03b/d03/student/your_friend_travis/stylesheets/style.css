@@ -10,22 +10,94 @@ html, body {
   color: #323232;
 }
 
+.header {
+  border: 1px solid #665544;
+  top: 5px;
+  background-color: #323232;
+  height: 50px;
+}
+
+.above {
+  margin: 10px;
+}
+
 li {
+  color: white;
   display: inline-block;
 }
 
-p {
-  font-size: 30px;
-  line-height: 0.1em;
-  position: relative;
-  top: 200px;
-  left: 500px;
+.travis {
+  /*display: inline-block;*/
+  border: 1px solid #665544;
+  margin-bottom: 0px;
+  width: 250px;
+  /*height: 300px;*/
+  /*position: absolute;
+  top: 300px;
+  left: 50px;*/
 }
 
-div {
-  position: relative;
-  top: 500px;
-  left: 50px;
+
+p {
+  font-size: 30px;
+  width: 95%;
+  line-height: 0.1em;
+  /*position: relative;
+  top: 200px;
+  left: 500px;
+  border: 1px solid #665544;*/
 }
+
+.description {
+   display: inline-block;
+  width: 400px;
+  position: relative;
+  top: -500px;
+
+}
+
+.footer {
+  /*position: absolute;*/
+  display: block;
+  width: 100%;
+  background-color: #323232;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+  height: 100px;
+  /*display: inline-block;*/
+
+}
+
+.below {
+  /*display: inline-block;*/
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+/*.logo {
+  display: block;
+  width: 40px;
+  padding: 10px;*/
+}
+
+/*.content {
+  width: 900px;
+  height: 1000px;*/
+}
+
+img.friend {
+  width: 400px;
+  height: 200px;
+  border: 1px;
+  display: inline-block;
+  position: absolute;
+  top:  300px;
+  left: 200px;
+}
+
 /* background color in header & footer: #323232 */
 /* text color code for the header/footer: #DBDBDB       */

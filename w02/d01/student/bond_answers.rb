@@ -1,3 +1,5 @@
+require_relative 'bond_data'
+
 
 gross_per_movie = []
 

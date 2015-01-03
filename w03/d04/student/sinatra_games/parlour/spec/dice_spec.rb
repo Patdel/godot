@@ -1,4 +1,5 @@
 require_relative 'simple_assert'
+require_relative '../dice'
 include SimpleAssert
 
 # A traditional die is a rounded cube, with each of its six faces showing a
@@ -16,6 +17,9 @@ include SimpleAssert
 # For instance [3, 4] or [2, 2] for Snake Eyes!
 
 # Now let's try creating a class to represent DICE using SimpleAssert
+
+
+
 
 two_six_sided_dice = [6, 6]
 assert_that(
@@ -55,9 +59,9 @@ assert_that(
   Fixnum
 )
 
-# Die don't have to be just 6 sides! You can also have irregular sided die like
-# a dodecahedron, from the Greek δωδεκάεδρον, from δώδεκα dōdeka "twelve" +
-# ἕδρα hédra "base", "seat" or "face")
+# # Die don't have to be just 6 sides! You can also have irregular sided die like
+# # a dodecahedron, from the Greek δωδεκάεδρον, from δώδεκα dōdeka "twelve" +
+# # ἕδρα hédra "base", "seat" or "face")
 
 three_twelve_sided_dice = [12, 12, 12]
 assert_that(

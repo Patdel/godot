@@ -23,4 +23,6 @@ module SimpleAssert
       false
     end
   end
+
+  module_function :assert_that
 end

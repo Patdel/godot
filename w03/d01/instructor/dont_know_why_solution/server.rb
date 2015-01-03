@@ -7,7 +7,7 @@ module AppName                    # 1.  What is `AppName` and why do we use it?
 # `AppName::Server`.
 
   class Server < Sinatra::Base    # 2.  What is `Server`?
-                                  # 3.  What is `Sinatra`?
+                                  # 3.  What is `Sinatra?
                                   # 4.  What is `Base`?
 
   # `Server` is the class we've defined that inherits from `Sinatra::Base`
