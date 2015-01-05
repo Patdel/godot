@@ -1,7 +1,7 @@
 require_relative 'playlist'
 require_relative 'song'
 
-nothing_compares_to_you = Song.new("Nothing Compares 2 U", "Sinead O'Conner")
+nothing_compares_to_you = Song.new("Nothing Compares 2 U", "Sinead O'Connor")
 nothing_compares_to_you.play
 i_know_its_over         = Song.new("I know it's over", "The Smiths")
 call_your_girlfriend    = Song.new("Call Your Girlfriend", "Robyn")

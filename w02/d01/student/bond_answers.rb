@@ -1,6 +1,7 @@
 require_relative 'bond_data'
 
 
+
 gross_per_movie = []
 
 BOND_DATA.each {|income| gross_per_movie.push(income[:gross].gsub("$", "").gsub(",", "").to_i)}

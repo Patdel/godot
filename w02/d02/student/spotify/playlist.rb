@@ -34,7 +34,7 @@ class Playlist
     # The first time this block executes, 'song' will represent the first song in the self.songs array
     # The second time the block executes, 'song' will represent the second song in the array
     self.songs.each do |song|
-      # here, I'm calling .play on an instance of the Song class. Check the Song class definition to see what that method does (it says stuff about sweet vubes)
+      # here, I'm calling .play on an instance of the Song class. Check the Song class definition to see what that method does (it says stuff about sweet vibes)
       song.play
       sleep 2
     end

@@ -19,13 +19,12 @@ class McDonalds
     @item = item
   end
 
-  def .mc_rib (ready)
-
-  @@ready = ready
+  def mc_rib (ready)
+    @@ready = ready
   true
 end
 
-  def .has_mc_rib(has)
+  def has_mc_rib(has)
     @has_mc_rib = has
     true
   end

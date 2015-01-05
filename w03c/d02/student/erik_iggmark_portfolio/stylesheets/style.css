@@ -9,6 +9,75 @@ div {
 }
 
 header {
-  width: 80%;
+  width: 95%;
   height: 80px;
 }
+
+.logo {
+  width: 40%;
+  height: 10px;
+  display: inline-block;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.contact {
+  display: inline-block;
+  width: 20%;
+}
+
+li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+}
+
+.content {
+  width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.first_row.second_row.third_row {
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.square {
+  width: 250px;
+  margin-right: 5px;
+  margin-left: 5px;
+  /*text-align: center;*/
+}
+.lists {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personal {
+  width: 80%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+p {
+  display: inline-block;
+  text-align: right;
+}
+
+footer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
