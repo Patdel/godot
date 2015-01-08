@@ -26,3 +26,5 @@ emails = [
 emails.each do |email|
   redis.rpush("wdi:students", email)
 end
+
+

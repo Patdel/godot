@@ -1,4 +1,4 @@
-module GravatarApp
+module Mumbler
   class Server < Sinatra::Base
 
     configure :development do
