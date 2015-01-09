@@ -1,7 +1,7 @@
-# TODO require Redis
-require 'redis'
+require 'json'
 require 'sinatra/base'
 require 'sinatra/reloader'
+
 require_relative 'server'
 
-run App::Server
+run RandomApp::Server

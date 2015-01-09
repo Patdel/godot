@@ -1,0 +1,22 @@
+<h1>Sketches</h1>
+
+<ul>
+   <% @sketches.each do |sketch| %>
+   <img src="<% sketch["sketch_url"] %>" alt="">
+</ul>
+
+
+
+
+
+<form method="post" action="sketches">
+  <label>
+      <textarea name="sketch_name" cols="30" rows="10"></textarea>
+  </label>
+
+  <label>
+     <input type="date" name="sketch_made_on">
+  </label>
+
+
+</form>

@@ -1,0 +1,41 @@
+
+body {
+   font: Helvetica, Arial, sans-serif;
+   background: #fff url("../images/bgtile.png");
+}
+
+.page {
+  border: 1px solid red;
+  width: 900px;
+  margin: 100px auto 0;
+  ;
+}
+/*many pages have a total width of 900px*/
+.content {
+  border: 1px solid black;
+  width: 550px;
+  display: inline-block;
+  float: right;
+}
+
+.main {
+  border: 1px solid purple;
+  display: inline-block;
+  /*text-align: right;*/
+
+}
+
+.product-photo {
+  /*display: inline-block;
+  width: 30%;*/
+}
+
+li {
+  display: inline-block;
+
+}
+
+.footer {
+  border: 1px solid green;
+  width: 90%;
+}
