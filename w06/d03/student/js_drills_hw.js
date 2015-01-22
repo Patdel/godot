@@ -1,4 +1,3 @@
-console.log("homework.js linked!");
 
 ////////////////////////////////////////////////
 // Part 1: Linking
@@ -7,6 +6,7 @@ console.log("homework.js linked!");
 // Link this JavaScript file to an HTML document.
 // You'll know the file is correctly linked if the console says "homework.js linked!"
 
+console.log("homework.js linked!");
 ////////////////////////////////////////////////
 // Part 2: Working With Data Structures
 ////////////////////////////////////////////////
@@ -150,13 +150,25 @@ if (talkingHeadsAlbums.length >= 6) {
 
 // 1. Create an object literal called `band`.
 
+band = new Object()
+
 // 2. Give it the property `name` and set it to "Talking Heads"
+
+band = {
+    name : "Talking Heads"
+};
 
 // 3. Give it the property `members` and set it to an array with a single string, "David Byrne", in it.
 
+band.members = ["David Byrne"];
+
 // 4. Give it the property `albums` and set it to the array stored in the variable talkingHeadsAlbums
 
+band.albums = talkingHeadsAlbums
+
 // 5. Add "Tiny Weymouth", "Chris Franz" and "Jerry Harrison" to the members array.
+
+band.members.push("Tiny Weymouth", "Chris Franz", "Jerry Harrison");
 
 /////////////////////////////////////////////////////
 // Part 5: For Loops
@@ -164,7 +176,18 @@ if (talkingHeadsAlbums.length >= 6) {
 
 // 1. Use a for loop to print out the name of each Talking Heads album
 
+for (var i = 0, len = band.albums.length; i < len; i++) {
+console.log( band.albums[i].title );
+}
+
 // 2. Create a variable called 'sireTally', and set it to the integer value 0. Then use a for-loop to go through all the Talking Heads albums, incrementing sireTally if the album was released under the "Sire" label
+
+var sireTally = 0;
+for (var i = 0, len = band.albums.length; i < len; i++) {
+  if (band.albums[i]).albumDetails.label == "Sire" {
+    sireTally += 1;
+  };
+};
 
 /////////////////////////////////////////////////////
 // Part 6: More Tasks With Arrays and For Loops
