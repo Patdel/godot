@@ -137,6 +137,13 @@ var talkingHeadsAlbums = [
 
 // 1. print "Talking Heads were a prolific band" to the console IF AND ONLY IF Talking Heads have 6 albums or more. Otherwise, print "Talking heads didn't have much output." Use the array of albums above.
 
+if (talkingHeadsAlbums.length >= 6) {
+  console.log("Talking Heads were a prolific band");
+} else {
+  console.log("Talking heads didn't have much output.");
+}
+
+
 /////////////////////////////////////////////////////
 // Part 4: More Tasks About Datatypes and Structures
 /////////////////////////////////////////////////////
