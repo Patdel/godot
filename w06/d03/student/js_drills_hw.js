@@ -22,7 +22,11 @@ var album1 = {
 
 // 1. Retrieve the string "Sire" from album1, and save it in a sensibly named variable.
 
+var album1Label = album1.albumDetails.label;
+
 // 2. Change the title of album1 from "Talking Heads" to "Talking Heads: 77"
+
+album1.title = "Talking Heads: 77";
 
 var album2 = {
   title: "More Songs About Buildings and Food",
@@ -44,7 +48,14 @@ var album3 = {
 
 // 3. Access album2's formats array and use an array method to add "LP" to album3's formats
 
+album2.albumDetails.formats;
+
+album3.albumDetails.formats.push("LP");
+
 // 4. Change the release date of album3 from a string into a Date object
+
+var album3Date = album3.albumDetails.released ;
+album3.albumDetails.released = new Date(album3Date);
 
 
 var album4 = {
@@ -57,6 +68,7 @@ var album4 = {
 
 // 5. Add the label "Sire" to album4's details
 
+album4.label = "Sire"
 
 var album5 = {
   title: "Speaking in Tongues",
@@ -67,6 +79,10 @@ var album5 = {
 };
 
 // 6. Add a 'formats' array to album 5 and add "CD", "Cassette", and "LP"
+
+album5.formats = ["CD", "Cassette", "LP"]
+
+
 
 var album6 = {
   title: "Little Creatures",
@@ -79,6 +95,8 @@ var album6 = {
 
 // 7. Make the label "emi" in album6 all uppercase
 
+album6.albumDetails.label[1].toUpperCase();
+
 
 var album7 = {
   title: "True Stories",
@@ -90,6 +108,8 @@ var album7 = {
 };
 
 // Convert album7's 'label' property from the string value "Sire, EMI" into the array: ["Sire", "EMI"]
+
+album7.albumDetails.label = ["Sire", "Emi"];
 
 var album8 = {
   title: "Naked",
