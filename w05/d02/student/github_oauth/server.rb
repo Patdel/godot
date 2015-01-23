@@ -33,6 +33,7 @@ module GithubOauth
       session[:access_token] = response["access_token"]
       get_user_info
       redirect to('/')
+
     end
 
     get('/logout') do

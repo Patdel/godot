@@ -1,6 +1,8 @@
 module TheBachelor
   class Server < Sinatra::Base
 
+    use Rack::MethodOverride
+
     configure :development do
       register Sinatra::Reloader
     end
@@ -31,6 +33,11 @@ module TheBachelor
       name = params[:name].downcase
       @cast_member = $redis.hgetall("bachelorettes:#{name}")
       render(:erb, :cast_member)
+    end
+
+    delete ('bachelorettes/:name') do
+     name = params[:name].downcase
+     $redis.del("bachelorettes")
     end
   end
 end

@@ -3,7 +3,7 @@ require 'redis'
 redis = Redis.new
 
 # just in case it's in there.
-redis.del("wdi:students")
+  redis.del("wdi:students")
 
 emails = [
   'carver403@gmail.com',

@@ -41,7 +41,7 @@ module Mumbler
     post('/mumbles') do
       if params['text'] == '' || params['author_email'] == ''
         redirect to('/mumbles/new')
-      end
+    end
 
       # try to get gravatar info
       grav_data = gravatar_author_info(params['author_email'])
