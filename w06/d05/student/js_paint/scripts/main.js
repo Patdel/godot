@@ -19,7 +19,9 @@ for (var i = 0; i < 805; i++) {
   tile.className = 'tile';
   canvas.appendChild(tile);
 tile.addEventListener("mouseover", turnGreen);
+if (up) {
 tile.addEventListener("mouseout", loseGreen);
+  };
 }
 
 
