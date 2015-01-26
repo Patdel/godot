@@ -9,3 +9,4 @@ p.textContent = "A list of their albums:"
 var elAlbums = document.querySelector(".albums");
 elAlbums.appendChild(p);
 elAlbums.appendChild(ul);
+
