@@ -23,19 +23,3 @@ var bondFilms = [
   { releasedOn: "29 October 2008",   actor: "Daniel Craig",   gross:   "$622,246,378", title: "Quantum of Solace" },
   { releasedOn: "23 October 2012",   actor: "Daniel Craig",   gross: "$1,108,561,008", title: "Skyfall" }
 ];
-//grossToNumber = function(x) { parseFloat(x.replace(/[\$,\,]/g, "")) };
-//var x = grossToNumber()
-
-function grossToNumber(num) { parseFloat(num.replace(/[\$,\,]/g, "")); }
-
-//var square = function(number) {return number * number};
-//var x = square(4) //x gets the value 16
-
-
-//function square(number) {
-//  return number * number;
-//}
-
-
-// bondFilms[0].gross.replace(/[\$,\,]/g, "")
-
