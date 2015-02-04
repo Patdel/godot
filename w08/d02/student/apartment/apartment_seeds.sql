@@ -3,6 +3,13 @@ TRUNCATE TABLE doormen CASCADE;
 TRUNCATE TABLE apartments CASCADE;
 TRUNCATE TABLE tenants CASCADE;
 
+-- A building can have many apartments, but apartments can have only one building
+-- Apartments can have only ine building
+
+-- Apartments can have more than one tenant, but tenants have only one apartment
+
+-- Buildings can have more tha one doorman, but doormen have only one apartment
+
 INSERT INTO buildings (id, name, address, num_floors) VALUES (1, 'Strosin, OHara and Kutch', '7251 Torey Ridge, Port Mariana, MS 18143', 6);
 INSERT INTO buildings (id, name, address, num_floors) VALUES (2, 'Altenwerth-Connelly', '865 Greenholt Junctions, South Dayanaville, SC 79091', 9);
 INSERT INTO buildings (id, name, address, num_floors) VALUES (3, 'Abbott, Reynolds and Kris', '278 Vernie Stravenue, East Lyda, AZ 46490', 4);
