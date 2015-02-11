@@ -40,8 +40,12 @@ Run the command `rails` from outside of a Rails app and from within one.
 Does the output change?
 
 - What version of Rails are you running?
+  4.2.0
 - What's the command to create a new Rails application?
+  rails new
 - What is Rails default Database?
+  SQLite 3
+
 - How does one configure Rails presets?
 - How does one create a new Rails Application with a postgresql database?
 
@@ -51,16 +55,18 @@ Inside of `dev/wdi`
 
 Create a new Rails application called `sample_app` without Active Record
 
-Create another new Rails application called `welcome_app` with 
+Create another new Rails application called `welcome_app` with
 
-- a postgres database inside of `dev/wdi` 
+- a postgres database inside of `dev/wdi`
+   rails new welcome_app -d postgresql -J
 - no Javascript
 
 Create another new Rails application called `popcorn_app` with
 
 - a postgres database
 - no turbolinks
-- no test unit 
+  rails new popcorn_app
+- no test unit
 
 `cd` into `sample_app` and run `rails -h`
 

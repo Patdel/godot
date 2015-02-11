@@ -5,22 +5,27 @@
   <title>Animations</title>
 
   <link rel='stylesheet' type='text/css' href='stylesheets/normalize.css'>
+  <link rel="stylesheet" href="stylesheets/animate.css">
+
+  <link rel='stylesheet' type='text/css' href='stylesheets/main.css'>
+
   <style>
-    /* Your style here. */
+
   </style>
-  
+
+
   <script type="text/javascript" src="scripts/jquery.js"></script>
 </head>
 <body>
   <div class="wrapper">
-    <header><h1>Animations</h1></header>
+    <header><h1 class="animated fadeIn">Animations</h1></header>
     <div class="content">
       <nav>
         <ul>
-        <li>Option One</li>
-        <li>Option Two</li>
-        <li>Option Three</li>
-        <li>Option Four</li>
+        <li class="animated bounceInLeft">Option One</li>
+        <li class="animated bounceInLeft">Option Two</li>
+        <li class="animated bounceInLeft">Option Three</li>
+        <li class="animated bounceInLeft">Option Four</li>
         </ul>
       </nav>
       <section class="table">
@@ -28,7 +33,13 @@
     </div>
   </div>
   <script>
-    // Your scripts here.
+     // Your scripts here
+    window.addEventListener("load", function(event) {
+      $("body").addClass("animated fadeIn");
+       setTimeout(function(){
+          $("li").eq(0).removeClass("hide");
+       }, 1500);
+     });
   </script>
 </body>
 </html>

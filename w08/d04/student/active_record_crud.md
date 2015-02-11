@@ -8,7 +8,7 @@ Read through part 5 of [ActiveRecord basics](http://guides.rubyonrails.org/activ
 
 ### We're going to test out ActiveRecord on the hogwarts_app data we used from the other day.
 
-> If you want fresh hogwarts data check the `hogwarts_app` folder and run the 
+> If you want fresh hogwarts data check the `hogwarts_app` folder and run the
 `schema` and `seed` sql files.
 
 ## Setup
@@ -16,7 +16,7 @@ Read through part 5 of [ActiveRecord basics](http://guides.rubyonrails.org/activ
 Because we're using ActiveRecord outside of Rails, we'll need to configure it
 so it knows to talk to our database.
 
-The following code doesn't need to go in EVERY Ruby file that uses ActiveRecord, 
+The following code doesn't need to go in EVERY Ruby file that uses ActiveRecord,
 it just needs to be loaded once before everything else.
 
 ```rb
@@ -24,7 +24,7 @@ require 'active_record'
 ActiveRecord::Base.establish_connection(
   adapter:  'postgresql',
   host:     'localhost',
-  username: 'philco',  # your username 
+  username: 'philco',  # your username
   database: 'petstore' # whatever postgres db you want to connect to
 )
 ```
@@ -61,8 +61,11 @@ ActiveRecord::Base.logger = ActiveSupport::Logger.new($stdout)
 
 
 - How would you query the database and get back all the student records using ActiveRecord?
+   Student.all
 - What kind of object is returned from the above query?
+   An array
 - How would you find all the students with the last name "Weasley"?
+
 - How would you change the student named "Tom Riddle" to "Larry Voldemort"
 - How would you change all the students with the last name of "Weasley" to "Weezy"
 - How would you delete the student formally known as "Tom Riddle"?

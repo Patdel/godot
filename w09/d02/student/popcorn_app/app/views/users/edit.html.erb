@@ -1,0 +1,11 @@
+<h1>Edit User!</h1>
+<% render("form") %>
+
+<%= form_for(@user) do |f| %>
+<%= f.label :login, "Email" %>:
+  <%= f.text_field :login %>
+  <%= f.label :born_on, "Birthdate" %>:
+  <%= f.date_field :born_on %>
+
+  <%= f.submit  %>
+<% end %>

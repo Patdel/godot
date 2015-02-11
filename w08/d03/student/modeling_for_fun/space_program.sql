@@ -36,7 +36,7 @@ name varchar(30) NOT NULL,
 role varchar(30) NOT NULL,
 born_on date,
 gender varchar(10),
-nation_id integer REFERENCES nation(id),
+nation_id integer REFERENCES nation(id)
 );
 
 CREATE TABLE mission (

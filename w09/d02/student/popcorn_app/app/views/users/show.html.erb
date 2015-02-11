@@ -1,0 +1,16 @@
+
+<%= button_to "Create a new user!", new_user_path, method: "get" %>
+<div class="users collection">
+  <% @users.each do |user| %>
+
+<div class="user">
+   <p>User Login: <%= @user.login %></p>
+   <p>Current Balance: <%= @user.balance %></p>
+   <p>Birthdate: <%= @user.born_on%></p>
+
+</div>
+
+<a href="<%= users_path %>">Return to user list.</a>
+<%= link_to("Return to user list.", users_path) %>
+<%= link_to("Edit this user.", edit_user_path(@user)) %>
+

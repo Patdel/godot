@@ -5,3 +5,13 @@
 .selected {
   border: 1px solid blue;
 }
+
+.shot {
+  background-color: red;
+}
+
+.dead {
+  background-color: black;
+}
+
+.
