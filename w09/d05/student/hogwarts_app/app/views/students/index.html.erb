@@ -1,6 +1,32 @@
 <h1>Here are the students</h1>
 <% @students.each do |student| %>
   <div>
-    <%= link_to student, students_path(student) %> - <%= student.house %>
+    <%= link_to student.name, student_path(student) %>
 <% end %>
   </div>
+
+
+
+
+
+<!-- link_to "Profile", profile_path(@profile)
+# => <a href="/profiles/1">Profile</a> -->
+
+
+
+
+<!--
+    link_to(body, url, html_options = {})
+  # url is a String; you can use URL helpers like
+  # posts_path
+
+link_to(body, url_options = {}, html_options = {})
+  # url_options, except :method, is passed to url_for
+
+link_to(options = {}, html_options = {}) do
+  # name
+end
+
+link_to(url, html_options = {}) do
+  # name
+end -->
