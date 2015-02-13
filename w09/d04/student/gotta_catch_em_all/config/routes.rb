@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pokemon
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,6 +7,25 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+      get '/' => 'welcome#index'
+      get '/pokemon' => 'pokemon#index'
+      get '/pokemon/explore' => 'explore#index'
+      get '/explore/random_poke_clash' => 'random_poke_clash#index'
+
+
+
+#       $ bin/rake routes
+#       Prefix Verb   URI Pattern                  Controller#Action
+#     articles GET    /articles(.:format)          articles#index
+#              POST   /articles(.:format)          articles#create
+#  new_article GET    /articles/new(.:format)      articles#new
+# edit_article GET    /articles/:id/edit(.:format) articles#edit
+#      article GET    /articles/:id(.:format)      articles#show
+#              PATCH  /articles/:id(.:format)      articles#update
+#              PUT    /articles/:id(.:format)      articles#update
+#              DELETE /articles/:id(.:format)      articles#destroy
+#         root GET    /                            welcome#index
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
