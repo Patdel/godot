@@ -6,6 +6,7 @@ var sleepIn = function(dayName) {
   }
 }
 
+<<<<<<< HEAD
 var prettyTime = function() {
 
 }
@@ -13,4 +14,5 @@ var prettyTime = function() {
 var pluralize = function() {
   var tail = list.pop();
   return list.join(', ') + ' and ' + tail;
+
 }
