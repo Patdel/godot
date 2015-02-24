@@ -17,6 +17,7 @@ describe('sleepIn', function(){
 
   it('returns false for any work day', function(){
     var workday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    expect( sleepIn(workday) ).toBe(false);
     var randomNumber = Math.floor(Math.random() * workday.length)
     var randomWorkday = workday[randomNumber];
     expect( sleepIn(randomWorkday) ).toBe(false);
@@ -28,9 +29,13 @@ describe('pluralize', function(){
 
   it('turns an array into a comma separated string', function(){
     var list = ['lions', 'tigers', 'bears'];
-    pending("This won't run until we comment it out");
-    expect( pluralize(list) ).toEqual( "lions, tiger's and bears" );
+    // pending("This won't run until we comment it out");
+    expect( pluralize(list) ).toEqual( 'lions, tigers and bears' );
   });
+  // it("works on any array of strings", function() {
+  //   var snacks = ['doritos', 'apples', 'cheetos']
+  //   expect( pluralize(snacks) ).toEqual( 'doritos, apples, candy and cheetos');
+  // })
 
 });
 
